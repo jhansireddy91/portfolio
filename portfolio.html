@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jhansi Soma - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: #0d0d0d;
+      color: #f5f5f5;
+      overflow-x: hidden;
+      position: relative;
+    }
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+    nav {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      z-index: 100;
+    }
+    nav h1 {
+      color: #ff3c3c;
+      font-weight: 700;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #f5f5f5;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #ff3c3c;
+    }
+    section {
+      padding: 100px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .hero {
+      text-align: center;
+      margin-top: 100px;
+    }
+    .hero img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #ff3c3c;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background: #ff3c3c;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 500;
+    }
+    h2 {
+      color: #ff3c3c;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    ul li {
+      margin: 10px 0;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <nav>
+    <h1>Jhansi Soma</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <img src="profile.jpg" alt="Jhansi Soma" />
+    <h1>Hi, I'm Jhansi Soma</h1>
+    <p>Final Year B.Tech CSE (AI & ML) | Web & ML Enthusiast</p>
+    <a href="2025 JHANSI SOME RESUME (1).pdf" class="btn" download>Download Resume</a>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a hardworking and passionate Computer Science student at CMR Engineering College, specializing in Artificial Intelligence and Machine Learning with a CGPA of 9.35. I have hands-on experience in web development, programming, and building machine learning models. I'm enthusiastic about problem-solving and actively seek opportunities to grow and contribute to impactful projects.</p>
+  </section>
+
+  <!-- <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> Java, Python, C, HTML, CSS, JavaScript, SQL</li>
+      <li><strong>Tools:</strong> VS Code, PyCharm, Jupyter Notebook, Google Colab, Anaconda, Git</li>
+      <li><strong>Libraries/Frameworks:</strong> Numpy, Pandas, Matplotlib, Seaborn, Scikit-learn, React</li>
+      <li><strong>Soft Skills:</strong> Leadership, Time Management, Adaptability, Communication</li>
+    </ul>
+  </section> -->
+
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px;">
+      
+      <div style="background-color: #1a1a1a; border-radius: 10px; padding: 20px;">
+        <h3 style="color: #ff3c3c; margin-bottom: 10px;">Languages</h3>
+        <p>
+          <i class="fab fa-java" title="Java"></i> Java<br>
+          <i class="fab fa-python" title="Python"></i> Python<br>
+          <i class="fas fa-code" title="C"></i> C<br>
+          <i class="fab fa-html5" title="HTML"></i> HTML<br>
+          <i class="fab fa-css3-alt" title="CSS"></i> CSS<br>
+          <i class="fab fa-js-square" title="JavaScript"></i> JavaScript<br>
+          <i class="fas fa-database" title="SQL"></i> SQL
+        </p>
+      </div>
+  
+      <div style="background-color: #1a1a1a; border-radius: 10px; padding: 20px;">
+        <h3 style="color: #ff3c3c; margin-bottom: 10px;">Tools</h3>
+        <p>
+          <i class="fas fa-code" title="VS Code"></i> VS Code<br>
+          <i class="fas fa-laptop-code" title="PyCharm"></i> PyCharm<br>
+          <i class="fas fa-book" title="Jupyter Notebook"></i> Jupyter<br>
+          <i class="fas fa-cloud" title="Google Colab"></i> Colab<br>
+          <i class="fas fa-box-open" title="Anaconda"></i> Anaconda<br>
+          <i class="fab fa-git-alt" title="Git"></i> Git
+        </p>
+      </div>
+  
+      <div style="background-color: #1a1a1a; border-radius: 10px; padding: 20px;">
+        <h3 style="color: #ff3c3c; margin-bottom: 10px;">Libraries & Frameworks</h3>
+        <p>
+          <i class="fas fa-project-diagram" title="Numpy"></i> Numpy<br>
+          <i class="fas fa-database" title="Pandas"></i> Pandas<br>
+          <i class="fas fa-chart-line" title="Matplotlib"></i> Matplotlib<br>
+          <i class="fas fa-chart-pie" title="Seaborn"></i> Seaborn<br>
+          <i class="fas fa-brain" title="Scikit-learn"></i> Scikit-learn<br>
+          <i class="fab fa-react" title="React"></i> React
+        </p>
+      </div>
+  
+      <div style="background-color: #1a1a1a; border-radius: 10px; padding: 20px;">
+        <h3 style="color: #ff3c3c; margin-bottom: 10px;">Soft Skills</h3>
+        <p>
+          <i class="fas fa-user-tie" title="Leadership"></i> Leadership<br>
+          <i class="fas fa-clock" title="Time Management"></i> Time Management<br>
+          <i class="fas fa-sync-alt" title="Adaptability"></i> Adaptability<br>
+          <i class="fas fa-comments" title="Communication"></i> Communication
+        </p>
+      </div>
+  
+    </div>
+  </section>
+  
+   
+  <section id="projects">
+    <h2>Projects</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px;">
+      
+      <div style="background-color: #1a1a1a; border-radius: 10px; padding: 20px;">
+        <h3 style="color: #ff3c3c; margin-bottom: 10px;">Portfolio Website</h3>
+        <p>Created using HTML, CSS, JS, and Canva to showcase my work and resume.</p>
+      </div>
+  
+      <div style="background-color: #1a1a1a; border-radius: 10px; padding: 20px;">
+        <h3 style="color: #ff3c3c; margin-bottom: 10px;">Amazon Clone</h3>
+        <p>A front-end replica of the Amazon platform (2023–2024).</p>
+      </div>
+  
+      <div style="background-color: #1a1a1a; border-radius: 10px; padding: 20px;">
+        <h3 style="color: #ff3c3c; margin-bottom: 10px;">Landmine Detector</h3>
+        <p>Arduino-based research project for landmine detection (Feb–Jun 2024).</p>
+      </div>
+  
+      <div style="background-color: #1a1a1a; border-radius: 10px; padding: 20px;">
+        <h3 style="color: #ff3c3c; margin-bottom: 10px;">Multiple Disease Prediction</h3>
+        <p>ML web app to predict heart disease, diabetes, and Parkinson’s using trained models.</p>
+      </div>
+  
+    </div>
+  </section>
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; padding: 20px;">
+  
+      <div style="background-color: #1a1a1a; border-radius: 15px; padding: 25px; box-shadow: 0 0 10px rgba(255, 60, 60, 0.2); transition: transform 0.3s;">
+        <h3 style="color: #ff3c3c; margin-bottom: 10px;"><i class="fas fa-certificate"></i> AI Data Scientist</h3>
+        <p style="color: #ccc;">Issued by TBOCWWB<br><small>September 2024</small></p>
+      </div>
+  
+      <div style="background-color: #1a1a1a; border-radius: 15px; padding: 25px; box-shadow: 0 0 10px rgba(255, 60, 60, 0.2); transition: transform 0.3s;">
+        <h3 style="color: #ff3c3c; margin-bottom: 10px;"><i class="fas fa-certificate"></i> Python (Elite + Silver)</h3>
+        <p style="color: #ccc;">Issued by NPTEL – IIT Madras<br><small>October 2024</small></p>
+      </div>
+  
+      <div style="background-color: #1a1a1a; border-radius: 15px; padding: 25px; box-shadow: 0 0 10px rgba(255, 60, 60, 0.2); transition: transform 0.3s;">
+        <h3 style="color: #ff3c3c; margin-bottom: 10px;"><i class="fas fa-certificate"></i> HTML & CSS</h3>
+        <p style="color: #ccc;">Issued by SimpliLearn<br><small>March–April 2025</small></p>
+      </div>
+  
+      <div style="background-color: #1a1a1a; border-radius: 15px; padding: 25px; box-shadow: 0 0 10px rgba(255, 60, 60, 0.2); transition: transform 0.3s;">
+        <h3 style="color: #ff3c3c; margin-bottom: 10px;"><i class="fas fa-certificate"></i> Database & SQL</h3>
+        <p style="color: #ccc;">Issued by Infosys Springboard<br><small>April 2025</small></p>
+      </div>
+  
+    </div>
+  </section>
+  
+  
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:jhansisoma5@gmail.com">jhansisoma5@gmail.com</a></p>
+    <p>Phone: +91 9390137309</p>
+    <p>Location: Hyderabad, Telangana - 500049</p>
+    <p>GitHub: <a href="https://github.com/jhansireddy91" target="_blank">github.com/jhansireddy91</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Jhansi Soma | Portfolio</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 60, density: { enable: true, value_area: 800 } },
+        color: { value: "#ff3c3c" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5, random: true },
+        size: { value: 3, random: true },
+        line_linked: { enable: true, distance: 150, color: "#ff3c3c", opacity: 0.4, width: 1 },
+        move: { enable: true, speed: 3, direction: "none", random: false, straight: false, bounce: false }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "grab" },
+          onclick: { enable: true, mode: "push" },
+          resize: true
+        },
+        modes: {
+          grab: { distance: 140, line_linked: { opacity: 1 } },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+</body>
+</html>
